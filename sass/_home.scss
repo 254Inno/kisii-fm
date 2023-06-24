@@ -1,0 +1,76 @@
+.nav{
+    height: 14.5rem;
+    overflow: hidden;
+
+    &_top{
+        background-color: $color-white;
+        height: 8rem;
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__logo{
+            display: inline-block;
+            height: 6.5rem;
+        }
+
+        &__links{
+            display: flex;
+            list-style-type: none;
+
+            &--link{
+                display: inline-block;
+                //margin-right: 2rem;
+                //background-color: $color-red;
+                height: 100%;
+
+
+                .nav-link{
+                    display: inline-block;
+                    margin: auto 1rem;
+                    text-decoration: none;
+                    color: $color-green;
+                    font-size: 2rem;
+                    font-weight: $font-weight-bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &__listen{
+            @include flex-center;
+            height: 8rem;
+            width: 12.5rem;
+            background-color: $color-red;
+            border-radius: 0.5rem;
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            font-size: 1.4rem;
+            
+        }
+
+    }
+
+    &_bottom{
+        height: 6.5rem;
+        background-color: $color-black;
+
+        .container{
+            height: 100%;
+        }
+
+        &__list{
+            @include flex-center;
+            list-style-type: none;
+            height: 100%;
+            color: $color-white;
+            font-weight: $font-weight-bold;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+    }
+}

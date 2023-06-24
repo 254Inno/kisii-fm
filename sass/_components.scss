@@ -1,0 +1,15 @@
+.link{
+    text-decoration: none;
+    
+}
+.play-icon{
+    fill: $color-white;
+    width: 3rem;
+    height: 3.5rem;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
