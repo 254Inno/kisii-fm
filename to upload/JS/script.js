@@ -18,7 +18,7 @@ function playAudio(){
     audioPlaying =true;
     audio.setAttribute('src', 'https://stream-149.zeno.fm/9sw1dvaeh5zuv?zs=DhG0H21uRZmEPB6KQKW4pQ')
     audio.play();
-    playPauseIcon.setAttribute('xlink:href', 'sprite.svg#pause')
+    playPauseIcon.setAttribute('xlink:href', 'img/sprite.svg#pause')
     livePause.innerHTML = "live";
     play.setAttribute('title','Pause')
 }
@@ -27,7 +27,7 @@ function playAudio(){
 function pauseAudio(){
     audioPlaying = false;
     audio.pause();
-    playPauseIcon.setAttribute('xlink:href', 'sprite.svg#play')
+    playPauseIcon.setAttribute('xlink:href', 'img/sprite.svg#play')
     livePause.innerHTML = "paused";
     play.setAttribute('title','Pause')
 }
