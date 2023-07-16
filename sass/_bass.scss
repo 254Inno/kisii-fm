@@ -1,8 +1,10 @@
 $color-green: #0B6B20;
 $color-red: #E80D15;
+$color-red-shade: #e80d143b;
 $color-yellow: #DFD82F;
 $color-black: #060606;
 $color-white: #FFFFFF;
+$color-white-shade: #ffffff59;
 
 $font-primary: poppins;
 $font-secondary: "times new roman";
@@ -21,6 +23,9 @@ body{
 
 html {
     font-size: 62.5%;
+    @media screen and (max-width: 1200px) {
+        font-size: 50%;
+      }
 }
 
 body {
@@ -37,4 +42,9 @@ body {
 .container{
     max-width: 136.4rem;
     margin: 0 auto;
+
+    @media screen and (max-width: 1370px){
+        margin: 0 2rem;
+    }
+
 }
