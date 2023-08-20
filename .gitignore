@@ -1,2 +1,5 @@
 node_modules
 .ignore
+img/presenters
+to-upload
+unused-img
